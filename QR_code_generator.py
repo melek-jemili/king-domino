@@ -16,6 +16,7 @@ def generate_qr_code(text, file_name):
 #imput text to generate QR code 
 text = input("Enter the link of the website: ")
 name = input("Enter the file name to save the QR code: ")
-file_name="C:/Users/EXTRA/OneDrive/Bureau/python project/"+name+".png"
+file_path=input("Enter the file path where to save the QR code: ")
+file_name=file_path+name+".png"
 generate_qr_code(text, file_name)
-print(f"QR code generated successfully {file_name}")
+print(f"QR code generated successfully save in {name}.png !!")
